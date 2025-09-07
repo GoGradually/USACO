@@ -1,3 +1,5 @@
+package gold.divisibility.countingdivisors;
+
 import java.io.*;
 import java.util.*;
 
