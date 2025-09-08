@@ -22,8 +22,16 @@ public class Exponentiation {
         String[] s = br.readLine().split(" ");
         long a = Long.parseLong(s[0]);
         long b = Long.parseLong(s[1]);
+        long c = Long.parseLong(s[2]);
         long m = 1000000007L;
 
+        long result = 1;
+        long exp = exponentiation(b, c, m-1);
+        result = exponentiation(a, exp, m);
+        return result;
+    }
+
+    public static long exponentiation(long a, long b, long m){
         long result = 1;
         long now = a;
         while(b > 0){
